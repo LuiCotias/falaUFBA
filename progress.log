@@ -1,0 +1,8 @@
+[2015-11-15 15:22:37] START
+[2015-11-15 15:23:11] CREATE db1.py: 0
+[2015-11-15 15:32:27] EDIT news_ufba/models/db1.py: 17
+[2015-11-15 15:33:25] EDIT news_ufba/models/db1.py: 4
+[2015-11-15 15:36:22] EDIT news_ufba/models/db1.py: 0
+[2015-11-15 15:38:15] EDIT news_ufba/controllers/default.py: -7
+[2015-11-15 15:43:43] EDIT news_ufba/controllers/default.py: 16
+[2015-11-15 16:09:24] EDIT news_ufba/controllers/default.py: 12

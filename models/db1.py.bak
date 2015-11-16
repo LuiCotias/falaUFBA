@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+
+db.define_table('category', Field('name'))
+
+db.define_table('post',
+                Field('category', 'reference category'),
+                Field('title', 'string'),
+                Field('body', 'text'),
+                Field('votes','integer'),
+                auth.signature)
+
+db.define_table('vote',
+                Field('post','reference post'),
+                Field('score','integer', default=+1),
+                auth.signature)
+
+db.define_table('comment',
+                Field('post','reference post'),
+                Field('parent_comment','reference comment'),
+                Field('votes','integer'),
+                Field('body','text'),
+                auth.signature)
+
+
+db.define_table('comment_vote',
+                Field('comment','reference comment'),
+                Field('score','integer', default=+1),
+                auth.signature)

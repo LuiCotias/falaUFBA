@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+
+{{block header}}
+    <header class="container-fluid  background">
+      <div class="jumbotron text-center">
+        <!--{{if response.title:}}
+        <h1>{{=response.title}}
+          <small>{{=response.subtitle or ''}}</small></h1>
+        {{pass}}
+      </div>-->
+      <h1>fala UFBA!</h1>
+    </header>
+{{end}}
+
+{{for category in rows:}}
+<div class='well'>
+  {{=A(T(category.name.title()),_class='btn btn-large btn-primary',_href=URL('list_posts_by_votes', args=category.name))}}
+</div>
+{{pass}}
